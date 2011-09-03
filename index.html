@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Async Events</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link href="css/global.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="topbar-wrapper">
+			<div class="topbar">
+				<div class="fill">
+					<div class="container">
+						<h3><a href="#">Async Events Demo</a></h3>
+						<ul class="nav secondary-nav">
+							<li class="menu">
+								<a class="login" href="/login/">Login</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="alert-message success" style="display: none">
+				<a class="close" href="#">×</a>
+				<p><strong>Success!</strong> <span class="alert-text"></span></p>
+			</div>
+			<div class="page-header">
+				<h1>Woohoo it's a demo app!</h1>
+			</div>
+			<div id="intro" class="row">
+				<p class="column span10">This is a simple demo to demonstrate the benefits of using custom
+					events (or the publish / subscribe pattern) to keep your JavaScript
+					code modular and organised.</p>
+			</div>
+			<div class="page-header">
+				<h2>Async Events</h2>
+			</div>
+			<ul class="unstyled">
+				<li class="month row">
+					<div id="event-31" class="event column span8">
+						<h3>An Introduction to JavaScript Events</h3>
+						<time>25th August 2011</time>
+						<p>Events, also known as the publish/subscribe pattern, are a common idiom used throughout JavaScript.</p>
+						<img src="images/31.jpeg" width="100" height="100" />
+					</div>
+					<div id="event-30" class="event column span8">
+						<h3>HTML5 Security</h3>
+						<time>August 11th 2011</time>
+						<p>HTML5 is ushering in a new and exciting era of application-enabled development for the web.</p>
+						<img src="images/30.jpeg" width="100" height="100" />
+					</div>
+				</li>
+				<li class="month row">
+					<div id="event-29" class="event column span8">
+						<h3>Postcards from a Javascript App Stack</h3>
+						<time>28th July 2011</time>
+						<p>What happens if all of the components in your stack speak in JavaScript’s familiar JSON format, over REST APIs?</p>
+						<img src="images/29.jpeg" width="100" height="100" />
+					</div>
+					<div id="event-28" class="event column span8">
+						<h3>Titanium: Native mobile apps with JavaScript</h3>
+						<time>14th July 2011</time>
+						<p>Titanium is a framework for creating cross-platform, native mobile apps using JavaScript as its programming language.</p>
+						<img src="images/28.jpeg" width="100" height="100" />
+					</div>
+				</li>
+				<li class="month row">
+					<div id="event-27" class="event column span8">
+						<h3>CoffeeScriptease</h3>
+						<time>23rd June 2011</time>
+						<p>CoffeeScript is a little language built upon JavaScript designed to disguise its quirks and help you write terse, readable and maintainable code.</p>
+						<img src="images/27.jpeg" width="100" height="100" />
+					</div>
+					<div id="event-26" class="event column span8">
+						<h3>Making History</h3>
+						<time>9th June 2011</time>
+						<p>The HTML5 History API lets you create websites and apps that modify the URL in the browser’s location bar without causing the page to reload.</p>
+						<img src="images/26.jpeg" width="100" height="100" />
+					</div>
+				</li>
+				<li class="month row">
+					<div id="event-25" class="event column span8">
+						<h3>An introduction to Node.js</h3>
+						<time>26th May 2011</time>
+						<p>An absolute beginner’s guide to programming JavaScript on the server with Node.js, courtesy of Phil Hawksworth.</p>
+						<img src="images/25.jpeg" width="100" height="100" />
+					</div>
+					<div id="event-24" class="event column span8">
+						<h3>First Birthday Show n’ Tell</h3>
+						<time>12th May 2011</time>
+						<p>Today, we celebrate our birthday with the ever-popular Show n’ Tell. Come and show us what you’ve been up to in the land of JavaScript (/HTML5/CSS3…)</p>
+						<img src="images/24.jpeg" width="100" height="100" />
+					</div>
+				</li>
+				<li class="month row">
+					<div id="event-23" class="event column span8">
+						<h3>Micro Frameworks</h3>
+						<time>25rd June 2011</time>
+						<p>For this Async, we’ll take a look at a few of these micro frameworks and talk about the pros and cons of using them in your sites.</p>
+						<img src="images/23.png" width="100" height="100" />
+					</div>
+					<div id="event-22" class="event column span8">
+						<h3>#22: Building browser-based web apps, with Backbone.js</h3>
+						<time>9th July 2011</time>
+						<p>This week’s Async, with Aron Carroll and Premasagar Rose, is
+						about creating browser-based web applications, using the “MVC”
+						library Backbone.js</p>
+						<img src="images/22.jpeg" width="100" height="100" />
+					</div>
+				</li>
+			</ul>
+
+			<div class="overlay">
+				<form id="login" class="modal">
+					<div class="modal-header">
+						<h3>Login</h3>
+						<a href="#" class="close">×</a>
+					</div>
+					<div class="modal-body">
+						<p>Please enter your username and password to login</p>
+						<fieldset>
+						<div class="clearfix">
+							<label for="login-field-username">Email</label>
+							<div class="input">
+								<input type="text" id="login-field-username" placeholder="hi@howareyou.com" value="aron" />
+							</div>
+						</div>
+						<div class="clearfix">
+							<label for="login-field-password">Password</label>
+							<div class="input">
+								<input type="password" id="login-field-password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" value="password" />
+							</div>
+						</div>
+						</fieldset>
+					</div>
+					<div class="modal-footer">
+						<button href="#" class="btn primary">Login</button>
+						<button href="#" class="btn close">Cancel</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script src="javascript/jquery.js"></script>
+		<script src="javascript/events.js"></script>
+	</body>
+</html>

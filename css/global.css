@@ -1,0 +1,143 @@
+body {
+	padding-top: 60px;
+}
+
+.topbar {
+	z-index: 1;
+}
+
+.overlay {
+	position: fixed;
+	z-index: 6;
+	top: 0;
+	left: 0;
+	right: 100%;
+	bottom: 100%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0);
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+	-webkit-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.overlay.show {
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+	position: relative;
+	margin: 0;
+	top: 0;
+	left: 0;
+}
+
+.month {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DDD;
+}
+
+.user h3 {
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+.user b {
+	color: #404040;
+}
+
+.user img {
+	width: 30px;
+	float: left;
+	margin-right: 10px;
+	background-color: #fff;
+	padding: 4px;
+	border: 1px solid #DDD;
+}
+
+.event {
+	position: relative;
+	overflow: hidden;
+	min-height: 75px;
+	padding-left: 95px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.event h3 {
+	line-height: 1.3;
+}
+
+.event time {
+	color: #404040;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 1.8;
+}
+
+.event p {
+	font-size: 0.9em;
+}
+
+.event img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 75px;
+	height: 75px;
+	padding: 4px;
+	border: 1px solid #DDD;
+}
+
+.event .badge {
+	display: block;
+	position: absolute;
+	left: -37px;
+	top: -37px;
+	width: 60px;
+	height: 60px;
+	text-indent: -900em;
+	border-right: 4px solid #fff;
+	border-color: #fffefe;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.speaking .badge {
+	background: #ffd645;
+	background-image: -webkit-linear-gradient(
+	  360deg, #ffd645 70%, #ffba4f
+	);
+	background-image: -moz-linear-gradient(
+	  360deg, #ffd645 70%, #ffba4f
+	);
+	background-image: linear-gradient(
+	  360deg, #ffd645 70%, #ffba4f
+	);
+}
+
+.attending .badge {
+	background: #0087d0;
+	background-image: -webkit-linear-gradient(
+	  360deg, #00a0f4 70%, #0087d0
+	);
+	background-image: -moz-linear-gradient(
+	  360deg, #00a0f4 70%, #0087d0
+	);
+	background-image: linear-gradient(
+	  360deg, #00a0f4 70%, #0087d0
+	);
+}
